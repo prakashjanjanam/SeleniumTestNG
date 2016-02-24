@@ -28,7 +28,7 @@ public class SeleniumMavenTestNGTest{
         driver.findElement(By.id("lst-ib")).clear();
         driver.findElement(By.id("lst-ib")).sendKeys(searchString);
  
-        assertEquals(driver.findElements(By.xpath("//ul[@class='sbsb_b']/li")).size(),6,
+        assertEquals(driver.findElements(By.xpath("//ul[@class='sbsb_b']/li")).size(),4,
                 "Search term not found in search results");
         
         
